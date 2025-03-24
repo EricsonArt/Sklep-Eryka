@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria Sklepu</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .img-container {
+      width: 100%;
+      height: 200px; /* Stała wysokość dla wszystkich zdjęć */
+      overflow: hidden;
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Zapewnia, że zdjęcie wypełni kontener */
+      display: block;
+    }
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+    .card-content a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .card-content a:hover {
+      color: #1d7bb8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Galeria Sklepu</h1>
+    <div class="gallery">
+      
+      <!-- Karta 1 -->
+      <div class="card">
+        <div class="img-container">
+          <img src="motyl1.jpg" alt="Motyl">
+        </div>
+        <div class="card-content">
+          <a href="https://www.vinted.pl/items/6002040306-motyl-czarny" target="_blank">motyl1</a>
+        </div>
+      </div>
+      
+      <!-- Karta 2 -->
+      <div class="card">
+        <div class="img-container">
+          <img src="jajkosiedzace2.jpg" alt="Jajko Wielkanocne">
+        </div>
+        <div class="card-content">
+          <a href="https://www.vinted.pl/items/6023568555-jajko-wielkanocne" target="_blank">jajkosiedzace2</a>
+        </div>
+      </div>
+      
+      <!-- Karta 3 -->
+      <div class="card">
+        <div class="img-container">
+          <img src="zajaczkwaitkami3.jpg" alt="Zając Wielkanocny">
+        </div>
+        <div class="card-content">
+          <a href="https://www.vinted.pl/items/6002049055-zajac-wielkanocny" target="_blank">zajaczkwaitkami3</a>
+        </div>
+      </div>
+      
+      <!-- Karta 4 -->
+      <div class="card">
+        <div class="img-container">
+          <img src="komplet4.jpg" alt="Komplet">
+        </div>
+        <div class="card-content">
+          <a href="https://www.vinted.pl/items/6023545980-zajace-wialknocne" target="_blank">komplet4</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
